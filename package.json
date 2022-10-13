@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "commit": "git-cz"
   },
   "dependencies": {
     "react": "18.1.0",
@@ -16,7 +17,9 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
+    "@digitalroute/cz-conventional-changelog-for-jira": "^7.4.1",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@ryansonshine/commitizen": "^4.2.8",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.70.4",
@@ -40,5 +43,10 @@
       "json",
       "node"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
+    }
   }
 }
