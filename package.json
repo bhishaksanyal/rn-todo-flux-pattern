@@ -46,6 +46,7 @@
   },
   "config": {
     "commitizen": {
+      "jiraMode": false,
       "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
     }
   }
