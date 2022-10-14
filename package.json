@@ -20,6 +20,8 @@
     "@digitalroute/cz-conventional-changelog-for-jira": "^7.4.1",
     "@react-native-community/eslint-config": "^2.0.0",
     "@ryansonshine/commitizen": "^4.2.8",
+    "@testing-library/jest-native": "^5.0.0",
+    "@testing-library/react-native": "^11.2.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.70.4",
@@ -35,6 +37,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
